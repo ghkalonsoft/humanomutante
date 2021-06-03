@@ -6,8 +6,6 @@ import com.meli.esmutante.dto.EstadisticaDto;
 import com.meli.esmutante.model.MutanteModel;
 import com.meli.esmutante.repository.IEsmutanteRepository;
 
-import net.bytebuddy.matcher.IsNamedMatcher;
-
 @Service
 public class EsMutanteServiceImpl implements IEsMutanteService {
 
@@ -41,7 +39,7 @@ public class EsMutanteServiceImpl implements IEsMutanteService {
 		estadisticaDto.setCountMutantDna(this.iEsmutanteRepository.cantMutant());
 		estadisticaDto.setRatio(
 				estadisticaDto.getCountMutantDna().doubleValue() / estadisticaDto.getCountHumanDna().doubleValue());
-		estadisticaDto.setRatio(Double.isNaN(estadisticaDto.getRatio()) ? 0.0 : estadisticaDto.getRatio());		
+		estadisticaDto.setRatio(Double.isNaN(estadisticaDto.getRatio()) ? 0.0 : estadisticaDto.getRatio());
 		return estadisticaDto;
 	}
 

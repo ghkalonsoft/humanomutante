@@ -9,10 +9,12 @@ El tomcat embebido en el IDE, realiza el despliegue en el puerto 8080.
 
 # Ejecución en el VPS(Nube)
 El consumo de los servicios(/mutant y /stats), se realiza a través de las siguientes URLs:
-1. Para la validación de la cadena por método POST: http://162.241.90.231:8080/humanoMutante/mutant/ 
+1. Para la validación de la cadena por método POST: http://162.241.90.231:8080/humanoMutante/mutant/
+
 Cadena de array para mutantes: {
       "dna":["ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]
   }
+  
 Cadena de array para no mutante:  {
       "dna":["ATGCGA", "CAGTGC", "TTATTT", "AGACGG", "GCGTCA", "TCACTG"]
   }

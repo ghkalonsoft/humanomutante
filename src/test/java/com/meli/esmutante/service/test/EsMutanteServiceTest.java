@@ -63,18 +63,4 @@ public class EsMutanteServiceTest {
 		assertFalse(esMutante);
 	}
 
-	@Test
-	public void secuenciaValidadaEsMutante() {
-		char[] dna = "CCCCTA".toCharArray();
-		boolean esMutante = esMutanteServiceImpl.validarSecuencia(dna);
-		assertTrue(esMutante);
-	}
-
-	@Test
-	public void secuenciaValidadaNoMutante() {
-		char[] dna = "ATGCGA".toCharArray();
-		boolean esMutante = esMutanteServiceImpl.validarSecuencia(dna);
-		assertFalse(esMutante);
-	}
-
 }

@@ -2,7 +2,7 @@ package com.meli.esmutante.core;
 
 public class GestionMatriz {
 
-	static final String CARACTERES_VALIDOS = "ATCG";
+	private static final String CARACTERES_VALIDOS = "ATCG";
 	private String cadena;
 	private int cantidadMutante;
 
@@ -99,8 +99,9 @@ public class GestionMatriz {
 	 */
 	public boolean validarSecuencia(char[] cadena) {
 		int cont = 0;
+		int secuencia;
 		while (cont < cadena.length) {
-			int secuencia = 0;
+			secuencia = 0;
 			for (int j = 0; j < cadena.length; j++) {
 				if (cadena[cont] != cadena[j]) {
 					secuencia = 0;

@@ -14,6 +14,7 @@ public class GestionMatriz {
 		for (int i = 0; i < cadena.length; i++) {
 			matriz[i] = cadena[i].toCharArray();
 		}
+		System.out.println("Test");
 		return matriz;
 	}
 
